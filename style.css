@@ -159,21 +159,18 @@ body{
     letter-spacing: 10px;
     text-align: center;
 }
-.header__two,
-.header__three{
-    font-family: shapiro-dark;
-    color: #ffffff;
-    text-align: center;
+.atlanta{
     position: relative;
     z-index: 10;
+    width: 40%;
+    margin: 0 auto;
 }
-.header__two{
-    font-size: 4rem;
+
+.atlanta__image{
+    object-fit: cover;
+    width: 100%;
 }
-.header__three{
-    font-size: 6.5rem;
-    margin: -2rem 0 0;
-}
+
 .paragraph__two{
     font-family: Nersans;
     color: #ffffff;
