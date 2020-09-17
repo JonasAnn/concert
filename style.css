@@ -1,0 +1,402 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+@media only screen and (max-width: 900px){
+    html {
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width: 600px){
+    html {
+        font-size: 40%;
+    }
+}
+body{
+    background-color: #ffffff;
+    color:#0C0C0C;
+    letter-spacing: 3px;
+}
+
+/* fonts used */
+@font-face{
+    font-family: "Nersans";
+    src: url(fonts/Nersans\ Three.otf);
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "shapiro-dark";
+    src: url(fonts/OGJ\ Type\ Design\ -\ Shapiro\ 95\ Super\ Wide.otf);
+    font-style: normal;
+}
+.main{
+    width: 70%;
+    margin: 4rem auto;
+    background-image: url("./img/backround.png");
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+@media only screen and (max-width: 600px){
+    .main{
+        width: 100%;
+        background-image: linear-gradient(to bottom, transparent , #000000 ),
+         url(./img/backround.png);
+    }
+}
+/* styling for date */
+.date{
+    color: #ffffff;
+    font-family: Nersans;
+    position: absolute;
+    top: 4rem;
+    left: 15rem;
+}
+.date__day{
+    color: #ec6e00;
+    font-family: shapiro-dark;
+    font-size: 2.7rem;
+    margin: 0 0 -2rem;
+}
+.date__month{
+    font-size: 10rem;
+}
+.date__number{
+    display: block;
+    margin: -4rem 0 0;
+}
+.date__sup{
+    font-size: 7rem;
+}
+
+/* styling for logo */
+.logo{
+    position: absolute;
+    width: 40%;
+    top: 22rem;
+    left: 7rem;
+}
+.logo__image{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* styling for barcode */
+.first__barcode{
+    width: 20%;
+    position: absolute;
+    right: 1.8rem;
+    top: 3.5rem;
+    z-index: 0;
+}
+.first__barcode--1{
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1rem auto;
+}
+.first__barcode--2{
+    display: block;
+    max-width: 100%;
+}
+ /* styling for artist */
+ .artist{
+     width: 90%;
+     margin: 0 -13rem 0 auto;
+     padding: 3rem 0 0 ;
+     z-index: 4;
+     position: relative;
+ }
+.artist__image{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* title styling */
+.title{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin: -45rem auto 0;
+}
+
+.title__image{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* barcode left */
+.left__barcode{
+    margin: -20rem 0 0 -7rem;
+    position: relative;
+    z-index: 10;
+
+}
+
+/* main texts */
+.header__one,
+.paragraph__one{
+    position: relative;
+    z-index: 10;
+}
+.header__one{
+    font-family: shapiro-dark;
+    font-size: 6rem;
+    color: #ffffff;
+    padding: 7rem 0 0;
+    text-align: center;
+}
+.paragraph__one{
+    color: #ec6e00;
+    font-family: Nersans;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.header__two,
+.header__three{
+    font-family: shapiro-dark;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.header__two{
+    font-size: 4rem;
+}
+.header__three{
+    font-size: 6.5rem;
+    margin: -2rem 0 0;
+}
+.paragraph__two{
+    font-family: Nersans;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.75rem;
+    letter-spacing: 5px;
+    padding: 0 0 3rem;
+    background-color: #000;
+}
+/* styling for form */
+.form{
+ text-align: center;
+ position: relative;
+ z-index: 10;
+ margin: 2.5rem 0;
+ padding: .5rem 0;
+ background-image: linear-gradient( to right, #e0ba2291 8%,  transparent 15%,  transparent 85%, #E0BB22 100%);
+}
+.form__paragraph{
+    color: #FAD127;
+    font-size: 1.5rem;
+    font-family: Nersans;
+}
+.form__input{
+    background-color: #ffffff;
+    color: #0C0C0C;
+    width: 57%;
+    margin: 0 auto 0;
+    text-align: center;
+    border: none;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.form__input::placeholder{
+    color: #000;
+    font-family: Nersans;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+}
+.btn{
+    background-color: #D9660D;
+    display: block;
+    color: #ffffff;
+    font-family: Nersans;
+    border: none;
+    padding: 1rem 6rem;
+    font-size: 1.6rem;
+    margin: 0 auto 2rem;
+    letter-spacing: 5px;
+}
+/* styling for ages */
+.ages{
+    position: absolute;
+    width: 20%;
+    bottom: 10rem;
+    right: 2rem;
+    z-index: 10;
+}
+.ages__image{
+    object-fit: cover;
+    width: 100%;
+}
+/* styling last barcodes */
+.barcode__bottom{
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    z-index: 10;
+}
+/* .barcode__bottom--image{
+
+} */
+
+.last__barcode{
+    position: absolute;
+    bottom: 5rem;
+    left: -1rem;
+    z-index: 10;
+}
+
+/* styling for cars */
+.cars{
+    position: absolute;
+    bottom: 5rem;
+    left: -1rem;
+    z-index: 1;
+}
+.cars__image{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .date{
+        top: 4rem;
+        left: 4.5rem;
+    }
+    .date__day{
+        font-size: 1.3rem;
+        margin: 0 0 -1rem;
+    }
+    .date__month{
+        font-size: 5.5rem;
+    }
+    .date__number{
+        margin: -1rem 0 0;
+    }
+    .date__sup{
+        font-size: 4.5rem;
+    }
+    
+    /* styling for logo */
+    .logo{
+        top: 15rem;
+        left: 1rem;
+    }
+    
+    /* styling for barcode */
+    .first__barcode{
+        width: 15%;
+        right: 1rem; 
+        top: 2rem;
+    }
+    .first__barcode--1{
+        display: block;
+        max-width: 100%;
+        margin: 0 0 1rem auto;
+    }
+    .first__barcode--2{
+        display: block;
+        max-width: 100%;
+    }
+     /* styling for artist */
+     .artist{
+         margin: 0 -7rem 0 auto;
+     }
+
+    /* title styling */
+    .title{
+        margin: -25rem auto 0;
+    }
+    
+    /* barcode left */
+    .left__barcode{
+        margin: -10rem 0 0 -4.5rem;
+        height: 8rem;
+        width: 8rem;
+    }
+    .left__barcode--image{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .header__one{
+        font-size: 3rem;
+        padding: 3rem 0 0;
+    }
+    .paragraph__one{
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+      
+    }
+    .header__two{
+        font-size: 2rem;
+        background-color: #000;
+    }
+    .header__three{
+        font-size: 3.5rem;
+        margin: -1rem 0 0;
+        
+    }
+    .paragraph__two{
+        font-size: 1rem;
+        width: 60%;
+        margin: auto;
+    }
+
+    /* styling for form */
+    .form__paragraph{
+        font-size: 1rem;
+    }
+    .form__input{
+        width: 95%;
+        margin: 1rem 0;
+    }
+    
+    .form__input::placeholder{
+        font-size: 1rem;
+    }
+    /* style for ages */
+    .ages{
+        bottom: 8.9rem;
+        right: 1rem;
+    }
+    /* styling last barcodes */
+    .barcode__bottom{
+        height: 7.5rem;
+        width: 15rem;
+        bottom: -1rem;
+        right: -1rem;
+    }
+    .barcode__bottom--image,
+    .last__barcode--image{
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .last__barcode{
+        bottom: 10rem;
+        left: 0;
+        height: 10rem;
+        width: 5rem;
+    }
+    
+    /* styling for cars */
+    .cars{
+        bottom: 20rem;
+        left: 0;
+    }
+}
