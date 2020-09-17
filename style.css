@@ -40,7 +40,7 @@ body{
 .main{
     width: 70%;
     margin: 4rem auto;
-    background-image: linear-gradient(to bottom, transparent , #000000 ),
+    background-image: linear-gradient(to bottom, transparent 50% , #000000 100%),
          url(./img/backround.png);
     background-size: contain;
     position: relative;
@@ -49,8 +49,6 @@ body{
 @media only screen and (max-width: 600px){
     .main{
         width: 100%;
-        background-image: linear-gradient(to bottom, transparent , #000000 ),
-         url(./img/backround.png);
     }
 }
 /* styling for date */
