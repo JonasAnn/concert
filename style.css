@@ -40,7 +40,8 @@ body{
 .main{
     width: 70%;
     margin: 4rem auto;
-    background-image: url("./img/backround.png");
+    background-image: linear-gradient(to bottom, transparent , #000000 ),
+         url(./img/backround.png);
     background-size: contain;
     position: relative;
     overflow: hidden;
