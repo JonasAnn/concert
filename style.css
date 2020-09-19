@@ -249,7 +249,7 @@ body{
     margin: 0 auto 0;
     text-align: center;
     border: none;
-    padding: 1rem;
+    padding: .8rem;
     margin: 1.5rem 0;
 }
 
@@ -316,7 +316,7 @@ body{
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .date{
         top: 3rem;
         left: 2rem;
@@ -444,7 +444,7 @@ body{
         font-size: 1rem;
     }
     .form__input{
-        width: 95%;
+        width: 75%;
         margin: 1rem 0;
     }
     
